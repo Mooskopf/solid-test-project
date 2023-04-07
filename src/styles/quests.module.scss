@@ -1,0 +1,23 @@
+.quest_container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quest_container .btn {
+    margin-top: 20px;
+}
+
+.quest {
+    margin: 20px 0 10px 0;
+    border: 6px solid var(--green);
+    background-color: var(--brown);
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.author{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}

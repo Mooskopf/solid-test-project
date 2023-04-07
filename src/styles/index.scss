@@ -1,0 +1,130 @@
+@import "./variables.scss";
+
+:root {
+  --green: rgb(39, 85, 39);
+  --green-hover: rgb(59, 128, 59);
+  --brown: rgb(83, 30, 30);
+  --brown-hover: rgb(124, 45, 45);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+input, textarea{
+  width: calc(100% - 24px);
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+textarea{
+  height: 100px;
+}
+
+body {
+  font-family: "Roboto, sans serif";
+}
+
+html{
+  font-size: 18px;
+}
+
+.content{
+  width: $pageWidth;
+  margin: 120px auto 50px auto;
+}
+
+.btn{
+  outline: none;
+  border: none;
+  color: white;
+  background-color: var(--brown);
+  padding: 16px 24px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: var(--brown-hover);
+}
+
+.btn-secondary{
+  outline: none;
+  border: none;
+  color: white;
+  background-color: var(--green);
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.7rem;
+  margin-right: 10px;
+}
+
+.btn-secondary:hover{
+  cursor: pointer;
+  background-color: var(--green-hover);
+}
+
+
+
+/* MODAL */
+
+.modal {
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: var(--green);
+  margin: 0 auto; 
+  padding: 20px;
+  width: 400px;
+  color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.input-text{
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.modal-content .btn{
+  margin-top: 30px;
+}
+
+.close-container{
+  width: 20px;
+  height: 20px;
+  float: right;
+  cursor: pointer;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
